@@ -1,0 +1,34 @@
+.navbar-nav{
+  font-weight: 700;
+}
+
+.nav-link{
+  font-weight: 700;
+}
+
+.header{
+  height: 100vh;
+  background-image: url("image/top-page.jpeg");
+  background-size: cover;
+  padding-top: 62.75%;
+  position: relative;
+}
+.bgi{
+  height: 100%;
+  background: rgba(95, 87, 87, 0.39);
+}
+.text{
+  position:absolute;
+}
+
+.page-section{
+  height: 100vh;
+  background:#f8f9fa;
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
