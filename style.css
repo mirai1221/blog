@@ -1,34 +1,95 @@
-.navbar-nav{
-  font-weight: 700;
+
+
+
+
+body{
+  font-family: "Roboto Condensed", "Noto Sans", sans-serif;
 }
 
-.nav-link{
-  font-weight: 700;
-}
 
 .header{
   height: 100vh;
   background-image: url("image/top-page.jpeg");
   background-size: cover;
-  padding-top: 62.75%;
   position: relative;
 }
+
 .bgi{
   height: 100%;
-  background: rgba(95, 87, 87, 0.39);
+  background: rgba(95, 87, 87, 0.8);;
 }
-.text{
-  position:absolute;
+.headerBox{
+  width: 100%;
+  padding:0 15px 0 15px;
+  margin:0 auto;
+}
+.nav-link{
+  font-weight: 700;
 }
 
-.page-section{
+.profile-section{
   height: 100vh;
   background:#f8f9fa;
 }
-.container{
+
+.portfolio-section{
+  height: 100vh;
+}
+.contentBox{
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 60px 0 60px 0;
   margin-right: auto;
   margin-left: auto;
+}
+.contentBox h2{
+  text-align: center;
+  font-size:40px;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  color:white;
+  text-align: center;
+}
+
+hr.line{
+  max-width: 3.25rem;
+  border-width: 0.4rem;
+  background-color: #34c6d3;
+  margin-bottom: 10px;
+}
+
+.ityped{
+  font-size:40px;
+  white-space: nowrap;
+}
+.ityped-cursor {
+    font-size: 40px;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
 }
