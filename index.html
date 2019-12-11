@@ -8,6 +8,7 @@
   <script src="https://unpkg.com/ityped@1.0.3"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <title>My Portfolio</title>
 </head>
 <body>
@@ -29,10 +30,10 @@
                   <a class="nav-link" id="port2" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Skills</a>
+                  <a class="nav-link" id="port3" href="#">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" id="port4" href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -53,23 +54,42 @@
       <hr class="line"></hr>
     </div>
     <div class="button">
-        <button type="button">sample</button>
-      </div>
+        <a href=""><i class="fab fa-twitter fa-2x">Twitter</i></a>
+        <a href=""><i class="fab fa-github fa-2x">Github</i></a>
+        <a href=""><i class="fas fa-laptop-code fa-2x">Qiita</i></a>
+    </div>
   </section>
 
   <section class="portfolio-section">
       <div class="contentBox">
         <h2>Portfolio</h2>
         <hr class="line"></hr>
+
+        
       </div>
-      <div class="button">
-          <button type="button">sample</button>
+      <div class="box">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image/p1.jpg" alt="カードの画像">
+            <div class="card-body">
+              <h5 class="card-title">SPAサイト</h5>
+              <p class="card-text">Vue.jsを使ったSPAサイトを作りました。</p>
+              <a href="#" class="btn btn-info">サイトを閲覧する</a>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image/p1.jpg" alt="カードの画像">
+            <div class="card-body">
+              <h5 class="card-title">SPAサイト</h5>
+              <p class="card-text">Vue.jsを使ったSPAサイトを作りました。</p>
+             <a href="#" class="btn btn-info">サイトを閲覧する</a>
+            </div>
       </div>
   </section>
 
   <section class="skills-section">
       <div class="contentBox">
         <h2>Skills</h2>
+        <hr class="line"></hr>
       </div>
       <div class="button">
           <button type="button">sample</button>
@@ -79,6 +99,7 @@
   <section class="contact-section">
       <div class="contentBox">
         <h2>Contact</h2>
+        <hr class="line"></hr>
       </div>
       <div class="button">
           <button type="button">sample</button>
