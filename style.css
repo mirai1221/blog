@@ -33,7 +33,14 @@ body{
 }
 
 .portfolio-section{
-  height: 100vh;
+  height: 100%;
+}
+.box{
+  display: flex;
+  justify-content:space-around;
+}
+.skills-section{
+  background-color:#f8f9fa;
 }
 .contentBox{
   width: 100%;
@@ -44,6 +51,14 @@ body{
 .contentBox h2{
   text-align: center;
   font-size:40px;
+}
+
+.contact-section{
+  background-color: #343a40;
+  height: 50vh;
+}
+.contact-section h2{
+  color:#f8f9fa;
 }
 
 .text{
@@ -63,6 +78,9 @@ hr.line{
   margin-bottom: 10px;
 }
 
+
+
+/* iTyped */
 .ityped{
   font-size:40px;
   white-space: nowrap;
