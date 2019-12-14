@@ -1,11 +1,12 @@
-
-
-
-
 body{
   font-family: "Roboto Condensed", "Noto Sans", sans-serif;
 }
-
+hr.line{
+  max-width: 3.25rem;
+  border-width: 0.4rem;
+  background-color: #34c6d3;
+  margin-bottom: 10px;
+}
 
 .header{
   height: 100vh;
@@ -27,13 +28,46 @@ body{
   font-weight: 700;
 }
 
+.top-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  color:white;
+  text-align: center;
+  font-family:sans-serif;
+}
 .profile-section{
   height: 100vh;
   background:#f8f9fa;
 }
+.profile{
+  display: flex;
+  justify-content: space-around;
+}
+.profile-detail{
+  padding-left: 30px;
+
+}
+.profile-detail h4{
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family:sans-serif;
+}
+.profile-detail p{
+  font-size: 20px;
+}
+.link-button a{
+  color: #64707b;;
+  font-size: 20px;
+  padding: 0 10px;
+}
 
 .portfolio-section{
   height: 100%;
+  width: 100%;
 }
 .box{
   display: flex;
@@ -42,15 +76,25 @@ body{
 .skills-section{
   background-color:#f8f9fa;
 }
+
+.container{
+  max-width: 720px;
+}
 .contentBox{
   width: 100%;
-  padding: 60px 0 60px 0;
+  padding: 40px 0 60px 0;
   margin-right: auto;
   margin-left: auto;
 }
 .contentBox h2{
   text-align: center;
   font-size:40px;
+}
+.profile-contents{
+  width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .contact-section{
@@ -60,23 +104,17 @@ body{
 .contact-section h2{
   color:#f8f9fa;
 }
-
-.text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform : translate(-50%,-50%);
-  transform : translate(-50%,-50%);
-  color:white;
-  text-align: center;
+.skills-contents{
+  display: flex;
+  padding-bottom: 40px;
 }
 
-hr.line{
-  max-width: 3.25rem;
-  border-width: 0.4rem;
-  background-color: #34c6d3;
-  margin-bottom: 10px;
+
+.skills-contents i{
+  color: #fc9303;
+  font-size: 90px;
 }
+
 
 
 
