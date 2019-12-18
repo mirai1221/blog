@@ -1,12 +1,50 @@
 ityped.init(document.querySelector("#ityped"), {
-  strings: ['Hello World!', 'My name is Mirai_Fujihara', 'Welcome to My Portfolio Site!'],
+  strings: [
+    "Hello World!",
+    "My name is Mirai_Fujihara",
+    "Welcome to My Portfolio Site!"
+  ],
   typeSpeed: 120,
   loop: false,
   startDelay: 200
-})
+});
 
-$(function(){
-  $('#port1').click(function(){
-    $('.page-section').scrollTop();
-  })
-})
+$(function() {
+  $("#port1").click(function() {
+    $(".page-section").scrollTop();
+  });
+});
+
+jQuery(window).on("scroll", function($) {
+  if (jQuery(this).scrollTop() > 100) {
+    jQuery(".floating").show();
+  } else {
+    jQuery(".floating").hide();
+  }
+});
+
+jQuery(".floating").click(function() {
+  jQuery("body,html").animate(
+    {
+      scrollTop: 0
+    },
+    160
+  );
+  return false;
+});
+
+$(function() {
+  var header = $("#header");
+
+  header_offset = header.offset();
+
+  header_height = header.height();
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > header_offset.top + header_height) {
+      header.addClass("scroll");
+    } else {
+      header.removeClass("scroll");
+    }
+  });
+});

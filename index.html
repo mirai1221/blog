@@ -13,32 +13,34 @@
 </head>
 <body>
   <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="header">
+      <div class="container-fluid" id="headerBox">
+        <a class="navbar-brand text-light" href="#">Mirai's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav" >
+            <li class="nav-item">
+              <li class="nav-item">
+                  <a class="nav-link text-light" id="port1" href="#">HOME</a>
+              </li>
+                <a class="nav-link text-light" id="port2">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" id="port3" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" id="port4" href="#">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="main">
     <div class="header">
       <div class="bgi">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-          <div class="container-fluid" id="#headerBox">
-            <a class="navbar-brand" href="#">Mirai's Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav" >
-                <li class="nav-item">
-                    <a class="nav-link" id="port1">Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="port2" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="port3" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="port4" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
     <div class="top-text">
       <h1 class="font-weight-bold">I'm Mirai</h1>
       <hr class="line"></hr>
@@ -46,7 +48,7 @@
     </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <section class="profile-section">
     <div class="contanier">
@@ -56,7 +58,7 @@
       </div>
       <div class="profile-contents">
         <div class="profile">
-          <img src="/image/p1.jpg" class="img-fluid col-md-6" alt="Responsive image">
+          <img src="/image/pr.jpg" class="img-fluid" alt="Responsive image">
           <div class="profile-detail col-md-6">
             <h4>FUJIHARA MIRAI</h4>
             <p>新卒でサービス業に入社。1年目から評価され昇格試験を受けるも不合格。2年目から教育担当を任され 店舗の景品担当となり、前年対比で廃棄率90%カット、売り上げ110%増を達成した。<br><br>2019年６月からプログラミングの学習を開始。HTML・CSS・JavaScript・Rubyを中心にスクールに通いながらフロントエンドエンジニアを目指して転職活動中です。</p>
@@ -78,18 +80,26 @@
       </div>
       <div class="box">
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="image/p1.jpg" alt="カードの画像">
+            <img class="card-img-top" src="image/p1.jpg" alt="カードの画像" height="50%">
             <div class="card-body">
               <h5 class="card-title">SPAサイト</h5>
               <p class="card-text">Vue.jsを使ったSPAサイトを作りました。</p>
-              <a href="#" class="btn btn-info">サイトを閲覧する</a>
+              <a href="#" class="btn btn-info ">サイトを閲覧する</a>
             </div>
           </div>
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="image/p1.jpg" alt="カードの画像">
+            <img class="card-img-top" src="image/pr3.png" alt="カードの画像" height="50%">
             <div class="card-body">
-              <h5 class="card-title">SPAサイト</h5>
-              <p class="card-text">Vue.jsを使ったSPAサイトを作りました。</p>
+              <h5 class="card-title">チーム開発制作中</h5>
+              <p class="card-text">某ECサイト</p>
+              <a href="#" class="btn btn-info">サイトを閲覧する</a>
+            </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="image/pr2.jpeg" alt="カードの画像"height="50%">
+            <div class="card-body">
+              <h5 class="card-title">Coming Soon...</h5>
+              <p class="card-text">12月制作予定</p>
               <a href="#" class="btn btn-info">サイトを閲覧する</a>
             </div>
       </div>
@@ -104,6 +114,7 @@
         <div class="col-lg-3 col-md-6 text-center">
           <i class="fab fa-html5"></i>
           <h4>HTML5/CSS3</h4>
+          <p>HTML(haml)</p>
           <p>CSS(Sass)</p>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
@@ -124,15 +135,23 @@
       </div>
   </section>
 
-  <section class="contact-section">
-      <div class="contentBox">
-        <h2>Contact</h2>
-        <hr class="line"></hr>
+<!--ボタン-->
+  <div class="floating">
+  <a href="#"><i class="fas fa-angle-up fa-2x"></i><br>TOP</a>
+  </div>
+
+  <footer class="contact-section">
+    <div class="col-md-12 text-center">
+      <div class="link-tag">
+        <a href="https://twitter.com/MIRAI92396063"><i class="fab fa-twitter">Twitter</i></a>
+        <a href="https://github.com/mirai1221"><i class="fab fa-github">Github</i></a>
+        <a href="https://qiita.com/MIRAI1221"><i class="fas fa-laptop-code">Qiita</i></a>
       </div>
-      <div class="button">
-          <button type="button">sample</button>
-      </div>
-  </section>
+    </div>
+    <div class="copy">
+      Copyright © 2019 Mirai's Portfolio
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
