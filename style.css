@@ -14,6 +14,10 @@ hr.line {
   margin-bottom: 10px;
 }
 
+#header :hover {
+  color: #34c6d3!important;
+}
+
 #header.scroll {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed top:0;
@@ -24,10 +28,7 @@ hr.line {
   width: 100%;
   padding: 0 15px 0 15px;
   margin: 0 50px;
-}
-
-#navbar:hover {
-  color: #34c6d3!important;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -144,7 +145,7 @@ hr.line {
 
 .contentBox {
   width: 100%;
-  padding: 40px 0 60px 0;
+  padding: 60px 0 60px 0;
   margin-right: auto;
   margin-left: auto;
 }

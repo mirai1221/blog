@@ -1,4 +1,3 @@
-//
 ityped.init(document.querySelector("#ityped"), {
   strings: [
     "Hello World!",
@@ -61,6 +60,82 @@ $(function() {
         },
         500
       );
+    }
+  );
+});
+
+var header = $("#main").offset().top;
+
+$("#home").click(function() {
+  $("html,body").animate(
+    {
+      scrollTop: header
+    },
+    {
+      queue: false
+    }
+  );
+});
+
+var header = $("#main").offset().top;
+
+$("#navbar").click(function() {
+  $("html,body").animate(
+    {
+      scrollTop: header
+    },
+    {
+      queue: false
+    }
+  );
+});
+
+var profile = $("#profile").offset().top;
+
+$("#navbar1").click(function() {
+  $("html,body").animate(
+    {
+      scrollTop: profile
+    },
+    {
+      queue: false
+    }
+  );
+});
+
+var portfolio = $("#portfolio").offset().top;
+
+$("#navbar2").click(function() {
+  $("html,body").animate(
+    {
+      scrollTop: portfolio
+    },
+    {
+      queue: false
+    }
+  );
+});
+
+$(".main-button").click(function() {
+  $("html,body").animate(
+    {
+      scrollTop: portfolio
+    },
+    {
+      queue: false
+    }
+  );
+});
+
+var skills = $("#skills").offset().top;
+
+$("#navbar3").click(function() {
+  $("html,body").animate(
+    {
+      scrollTop: skills
+    },
+    {
+      queue: false
     }
   );
 });
