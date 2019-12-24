@@ -37,7 +37,7 @@ hr.line {
 
 .main {
   height: 100vh;
-  background-image: url("image/top-page-min.jpg");
+  background-image: url("image/main.jpg");
   background-size: cover;
   position: relative;
 }
