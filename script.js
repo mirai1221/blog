@@ -1,3 +1,4 @@
+//
 ityped.init(document.querySelector("#ityped"), {
   strings: [
     "Hello World!",
@@ -7,12 +8,6 @@ ityped.init(document.querySelector("#ityped"), {
   typeSpeed: 120,
   loop: false,
   startDelay: 200
-});
-
-$(function() {
-  $("#port1").click(function() {
-    $(".page-section").scrollTop();
-  });
 });
 
 jQuery(window).on("scroll", function($) {
@@ -47,4 +42,25 @@ $(function() {
       header.removeClass("scroll");
     }
   });
+});
+
+$(function() {
+  $(".pic_box").hover(
+    function() {
+      $(">span", this).animate(
+        {
+          top: "0px"
+        },
+        500
+      );
+    },
+    function() {
+      $(">span", this).animate(
+        {
+          top: "140px"
+        },
+        500
+      );
+    }
+  );
 });

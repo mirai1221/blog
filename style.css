@@ -17,7 +17,7 @@ hr.line {
 #header.scroll {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed top:0;
-  border-bottom: solid 1px silver;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 #headerBox {
@@ -26,24 +26,28 @@ hr.line {
   margin: 0 50px;
 }
 
-.header {
-  height: 100vh;
-  background-image: url("image/top-page.jpeg");
-  background-size: cover;
-  position: relative;
-}
-
-.bgi {
-  height: 100%;
-  background: rgba(95, 87, 87, 0.8);
-  ;
+#navbar:hover {
+  color: #34c6d3!important;
 }
 
 .nav-link {
   font-weight: 700;
 }
 
-.top-text {
+.main {
+  height: 100vh;
+  background-image: url("image/top-page-min.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.main-img {
+  height: 100%;
+  background: rgba(95, 87, 87, 0.8);
+  ;
+}
+
+.main-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,6 +56,22 @@ hr.line {
   color: white;
   text-align: center;
   font-family: sans-serif;
+}
+
+.main-button {
+  background: #34c6d3;
+  border-color: #34c6d3;
+  color: white;
+  border-radius: 4px;
+  padding: 12px 26px 12px 26px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-width: medium;
+}
+
+.main-button:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
 .profile-section {
@@ -100,10 +120,14 @@ hr.line {
   padding-bottom: 40px;
 }
 
-.box {
+.portfolio-main-box {
   display: flex;
   justify-content: space-around;
   margin: 0 40px;
+}
+
+.card {
+  padding: 0 !important;
 }
 
 .card-body {
@@ -241,4 +265,59 @@ hr.line {
   opacity: 1;
   text-decoration: none;
   color: #34c6d3;
+}
+
+.pic_box {
+  width: 100%;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+.pic_box span {
+  width: 100%;
+  height: 100%;
+  background: #34c6d3;
+  opacity: 0.9;
+  /*にゅっとでてくる部分の色*/
+  position: absolute;
+  top: 140px;
+  /*画像のheight*/
+  left: 0;
+  text-align: center;
+}
+
+.pic_text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.pic_box p {
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+}
+
+.pic_language {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pic_box p a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.pic_box p a:hover {
+  background: #fff;
+  color: rgba(239, 0, 151, 1);
 }
