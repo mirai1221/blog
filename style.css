@@ -232,8 +232,8 @@ hr.line {
 @media screen and (max-width: 479px) {
   /*ウィンドウ幅が最大479pxまでの場合に適用*/
   .ityped {
-    font-size: 20px;
-    /*緑色*/
+    font-size: 25px;
+    font-family: "Roboto Condensed", "Noto Sans", sans-serif;
   }
 }
 
