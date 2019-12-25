@@ -5,6 +5,7 @@ html, body, header, footer, section, h1, h2, ul, li, pre {
 
 body {
   font-family: "Roboto Condensed", "Noto Sans", sans-serif;
+  width: 100%;
 }
 
 hr.line {
@@ -33,6 +34,18 @@ hr.line {
 
 .nav-link {
   font-weight: 700;
+}
+
+.contentBox {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contentBox h2 {
+  text-align: center;
+  font-size: 40px;
 }
 
 .main {
@@ -81,13 +94,18 @@ hr.line {
   background: #f8f9fa;
 }
 
-.profile {
-  display: flex;
-  justify-content: space-around;
+.profile-contents {
+  max-width: 992px;
 }
 
-.profile-detail {
-  padding-left: 30px;
+.profile-section {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.profile-text {
+  color: red;
 }
 
 .profile-detail h4 {
@@ -138,6 +156,7 @@ hr.line {
   display: flex;
   justify-content: space-around;
   margin: 0 40px;
+  max-width: 1200px;
 }
 
 .card {
@@ -150,39 +169,13 @@ hr.line {
 
 .skills-section {
   background-color: #f8f9fa;
-}
-
-.container {
-  max-width: 720px;
-}
-
-.contentBox {
+  height: 100%;
   width: 100%;
-  padding: 60px 0 60px 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.contentBox h2 {
-  text-align: center;
-  font-size: 40px;
-}
-
-.profile-contents {
-  width: 960px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.profile-text {
-  color: red;
 }
 
 .skills-contents {
-  display: flex;
+  max-width: 1200px;
   padding-bottom: 40px;
-  margin: 0 30px;
 }
 
 .skills-contents i {
@@ -259,6 +252,7 @@ hr.line {
 /* topボタン */
 
 .floating {
+  z-index: 100;
   position: fixed;
   right: 8px;
   bottom: 8px;
