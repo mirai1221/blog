@@ -229,6 +229,14 @@ hr.line {
   table-layout: fixed;
 }
 
+@media screen and (max-width: 479px) {
+  /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  .ityped {
+    font-size: 20px;
+    /*緑色*/
+  }
+}
+
 .ityped-cursor {
   font-size: 40px;
   opacity: 1;
