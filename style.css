@@ -162,7 +162,7 @@ hr.line {
   display: flex;
   justify-content: space-around;
   margin: 0 40px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .card {
