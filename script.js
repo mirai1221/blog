@@ -1,3 +1,4 @@
+
 ityped.init(document.querySelector("#ityped"), {
   strings: [
     "Hello World!",
@@ -67,19 +68,6 @@ $(function() {
 var header = $("#main").offset().top;
 
 $("#home").click(function() {
-  $("html,body").animate(
-    {
-      scrollTop: header
-    },
-    {
-      queue: false
-    }
-  );
-});
-
-var header = $("#main").offset().top;
-
-$("#navbar").click(function() {
   $("html,body").animate(
     {
       scrollTop: header
