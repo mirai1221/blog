@@ -169,6 +169,7 @@ hr.line {
   padding: 0 !important;
 }
 
+
 .card-body {
   text-align: center;
 }
@@ -305,6 +306,7 @@ hr.line {
   padding-bottom: 30px;
   color: white;
   font-weight: bold;
+  border-bottom:solid 0.5px rgb(150, 144, 144) ;
 }
 
 .pic_box span {
