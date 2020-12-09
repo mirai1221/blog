@@ -1,16 +1,15 @@
-
 ityped.init(document.querySelector("#ityped"), {
   strings: [
     "Hello World!",
     "My name is Mirai_Fujihara",
-    "Welcome to My Portfolio Site!"
+    "Welcome to My Portfolio Site!",
   ],
   typeSpeed: 120,
   loop: false,
-  startDelay: 200
+  startDelay: 200,
 });
 
-jQuery(window).on("scroll", function($) {
+jQuery(window).on("scroll", function ($) {
   if (jQuery(this).scrollTop() > 100) {
     jQuery(".floating").show();
   } else {
@@ -18,24 +17,24 @@ jQuery(window).on("scroll", function($) {
   }
 });
 
-jQuery(".floating").click(function() {
+jQuery(".floating").click(function () {
   jQuery("body,html").animate(
     {
-      scrollTop: 0
+      scrollTop: 0,
     },
     160
   );
   return false;
 });
 
-$(function() {
+$(function () {
   var header = $("#header");
 
   header_offset = header.offset();
 
   header_height = header.height();
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > header_offset.top + header_height) {
       header.addClass("scroll");
     } else {
@@ -44,20 +43,20 @@ $(function() {
   });
 });
 
-$(function() {
+$(function () {
   $(".pic_box").hover(
-    function() {
+    function () {
       $(">span", this).animate(
         {
-          top: "0px"
+          top: "0px",
         },
         500
       );
     },
-    function() {
+    function () {
       $(">span", this).animate(
         {
-          top: "140px"
+          top: "140px",
         },
         500
       );
@@ -67,63 +66,63 @@ $(function() {
 
 var header = $("#main").offset().top;
 
-$("#home").click(function() {
+$("#navbar").click(function () {
   $("html,body").animate(
     {
-      scrollTop: header
+      scrollTop: header,
     },
     {
-      queue: false
+      queue: false,
     }
   );
 });
 
 var profile = $("#profile").offset().top;
 
-$("#navbar1").click(function() {
+$("#navbar1").click(function () {
   $("html,body").animate(
     {
-      scrollTop: profile
+      scrollTop: profile,
     },
     {
-      queue: false
+      queue: false,
     }
   );
 });
 
 var portfolio = $("#portfolio").offset().top;
 
-$("#navbar2").click(function() {
+$("#navbar2").click(function () {
   $("html,body").animate(
     {
-      scrollTop: portfolio
+      scrollTop: portfolio,
     },
     {
-      queue: false
+      queue: false,
     }
   );
 });
 
-$(".main-button").click(function() {
+$(".main-button").click(function () {
   $("html,body").animate(
     {
-      scrollTop: portfolio
+      scrollTop: portfolio,
     },
     {
-      queue: false
+      queue: false,
     }
   );
 });
 
 var skills = $("#skills").offset().top;
 
-$("#navbar3").click(function() {
+$("#navbar3").click(function () {
   $("html,body").animate(
     {
-      scrollTop: skills
+      scrollTop: skills,
     },
     {
-      queue: false
+      queue: false,
     }
   );
 });
