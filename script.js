@@ -22,7 +22,8 @@ jQuery(".floating").click(function () {
     {
       scrollTop: 0,
     },
-    160
+    3000,
+    "linear"
   );
   return false;
 });
