@@ -25,7 +25,7 @@ hr.line {
 
 #header.scroll {
   background-color: rgba(0, 0, 0, 0.7);
-  position: fixed top:0;
+  position: fixed top;
   border-bottom: 1px solid #f5f5f5;
 }
 
@@ -55,14 +55,14 @@ hr.line {
 .main {
   height: 100vh;
   background-image: url("image/main.jpg");
-  background-size: cover;
+  background-position: center center;
+  background-size: 100% 100%;
   position: relative;
 }
 
 .main-img {
   height: 100%;
   background: rgba(95, 87, 87, 0.8);
-  ;
 }
 
 .main-text {
@@ -168,7 +168,6 @@ hr.line {
 .card {
   padding: 0 !important;
 }
-
 
 .card-body {
   text-align: center;
@@ -306,7 +305,7 @@ hr.line {
   padding-bottom: 30px;
   color: white;
   font-weight: bold;
-  border-bottom:solid 0.5px rgb(150, 144, 144) ;
+  border-bottom: solid 0.5px rgb(150, 144, 144);
 }
 
 .pic_box span {
