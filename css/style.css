@@ -292,7 +292,7 @@ hr.line {
   border-radius: 48%;
   width: 85px;
   padding: 8px;
-  color: #fff;
+  border: 3px solid #d8d8d8;
 }
 
 .floating a {

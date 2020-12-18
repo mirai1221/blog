@@ -22,7 +22,7 @@ jQuery(".floating").click(function () {
     {
       scrollTop: 0,
     },
-    3000,
+    800,
     "linear"
   );
   return false;
